@@ -8,7 +8,7 @@ import json
 
 def superprogram(path):
 #    import nltk
-    nltk.download('wordnet')
+#    nltk.download('wordnet')
     import pandas as pd
     import json
     import requests

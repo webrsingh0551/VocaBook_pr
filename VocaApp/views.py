@@ -7,7 +7,7 @@ from datetime import datetime
 import json
 
 def superprogram(path):
-    import nltk
+#    import nltk
     nltk.download('wordnet')
     import pandas as pd
     import json
@@ -42,23 +42,23 @@ def superprogram(path):
     # data preprocessing
     from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
     import re
-    from nltk.stem import WordNetLemmatizer,PorterStemmer
-    lemmatizer = WordNetLemmatizer()
-    stemmer = PorterStemmer()
+#    from nltk.stem import WordNetLemmatizer,PorterStemmer
+#    lemmatizer = WordNetLemmatizer()
+#    stemmer = PorterStemmer()
 
-    def text_preprocess(text):
-        text = re.sub(r'[^\w\s]', '', text) 
-        l_text = [word for word in text.lower().split() if word not in ENGLISH_STOP_WORDS]
-        stem_words = [stemmer.stem(w) for w in l_text]
-        lemma_words = [lemmatizer.lemmatize(w) for w in l_text]
-        return " ".join(lemma_words)
+    # def text_preprocess(text):
+    #     text = re.sub(r'[^\w\s]', '', text) 
+    #     l_text = [word for word in text.lower().split() if word not in ENGLISH_STOP_WORDS]
+    #     stem_words = [stemmer.stem(w) for w in l_text]
+    #     lemma_words = [lemmatizer.lemmatize(w) for w in l_text]
+    #     return " ".join(lemma_words)
 
     def get_all_words_from_pdf(path):
         text = convert_pdf_to_txt(path)
         text = text.lower()
         clean = re.sub(r"[^a-zA-Z0-9]+", ' ', text)
         result = re.sub(r'[0-9]+', '', clean)
-        result = text_preprocess(result)
+#        result = text_preprocess(result)
         result = result.split()
         result  = set(result)
         return result

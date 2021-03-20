@@ -37,6 +37,11 @@ ______________________________________________________________
 1.  Tried to deploy vocabook on Heroku. It didn't work. Will
     try again tommorrow.
 ______________________________________________________________
+
+20/Mar/2021              
+
+1.  Deployed on Heroku, But App not working there.
+______________________________________________________________
 Things to do:
 1. Beutiful Front End.
 2. Profile Pic for users.

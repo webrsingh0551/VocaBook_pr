@@ -1,0 +1,73 @@
+ <html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<title> {{Title}} </title>
+	<style>
+		.accordion-body :		{display:hidden}
+
+		
+
+	</style>
+</head>
+<body>
+
+<script>
+
+function collapse()
+{
+	document.getElemenById("accordion-item").style.display = visible;
+	
+
+}
+
+</script>
+
+
+	<h1 align='center' >VocaBook</h1>
+
+	<h2> &emsp;{{Title}} </h2>
+
+	<div class="accordion" id="accordionExample">
+
+	{% comment %} 
+	{	'Unnamed: 0': 8,
+		'word': 'feast',
+		'audio': 'https://lex-audio.useremarkable.com/mp3/feast_us_1.mp3',
+		'defination': 'A large meal, typically one in celebration of something.',
+		'example': 'a wedding feast'} 
+		{% endcomment %}
+
+	{% for item in dic%}
+
+	<div class="accordion-item" onclick="collapse()">
+		<h2 class="accordion-header" id="headingOne">
+		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			<strong>{{item.word}}&emsp;&emsp;&emsp;</strong>
+			<audio controls>
+  				<source src={{item.audio}} type="audio/mpeg">
+			</audio>
+		</button>
+		</h2>
+		<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+		<div class="accordion-body" >
+
+			<strong>Synonyms &ensp; :</strong><code>&ensp;{{item.synonyms}}</code><br>
+			<strong>Defination &ensp; :</strong>&ensp;{{item.defination}} <br>
+			<strong>Example   &emsp;  :</strong>&ensp;{{item.example}} <br>
+			
+
+			
+		</div>
+		</div>
+	</div>
+
+	{%endfor%}
+
+
+
+	</div>
+	</div>
+
+	
+</body>
+</html>

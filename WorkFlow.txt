@@ -1,0 +1,60 @@
+_____________________________________________________________
+24/Feb/2021:
+
+1.  Enabled file uploading in filesystem.
+2.  PDF processing through superprogram and saved resulstant
+    csv file in filesystem.
+3.  Loaded csv file and fetched its content in HTML page.
+______________________________________________________________
+25/Feb/2021
+
+1.  Designed some basic layout of the project.
+2.  Saved the Book Name and filename in the database.
+    With the help of this, the list of pdf's and csv's can
+    be fetched.
+3.  Created a page with list of all books and csv's fetched
+    from the database.
+4.  Created a index page to with a list of links to all other
+    pages.(for convinience while working atleast.)
+______________________________________________________________
+27/Feb/2021
+
+1.  Successfully displayed vocabook page with vocab of
+    uploaded books. (Solved the problem with parameter passing
+    from HTML template)
+2.  Parsed dataframe content in vocabook page with json.
+    (Solved problem with data passing to HTML)
+______________________________________________________________
+
+3/Mar/2021              
+
+1. Added Synonyms data, displayed it on HTML page.
+2. Added Audio Button.
+______________________________________________________________
+
+19/Mar/2021              
+
+1.  Tried to deploy vocabook on Heroku. It didn't work. Will
+    try again tommorrow.
+______________________________________________________________
+Things to do:
+1. Beutiful Front End.
+2. Profile Pic for users.
+3. Giving users the right to download their vocabook merged pdf.
+4. Improve word selection in vocabook API.
+5. Think of a good name instead of VocaBook.
+6. 
+
+______________________________________________________________
+
+Money Models:
+1. Charge for merging vocabook at the end of the PDF.
+2. Take membership fee from users. Although users can still upload their vocabooks.
+FREE. For now, user can upload their voacbooks, access, merge  and see all other vocabooks for free.
+
+
+
+Enable V_Env
+
+source /home/sandeep/Project/Vocabook/env/bin/activate
+source env/bin/activate

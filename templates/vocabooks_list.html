@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
+</head>
+
+<body >
+    <h1 align='center'>VocaBooks List</h1>
+        <table align='center'>
+            <tr>
+                <th>Book Name</th>
+            </tr>
+        {%for bookname in books%}
+            {% if FileName == bookname.BookName %}
+                <tr>
+                    <td> <strong> <a  href="{% url 'vocabook' CSV_File_Name=bookname.BookName CSV_File_path=bookname.FileName  %}"> {{bookname.BookName}} </a> </strong> </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td> <a  href="{% url 'vocabook' CSV_File_Name=bookname.BookName CSV_File_path=bookname.FileName  %}"> {{bookname.BookName}} </a> </td>
+                </tr>
+            {%endif%}
+    <br>
+
+  {%endfor%}
+
+</body>

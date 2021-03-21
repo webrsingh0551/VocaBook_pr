@@ -53,13 +53,25 @@ Things to do:
 ______________________________________________________________
 
 Money Models:
-1. Charge for merging vocabook at the end of the PDF.
-2. Take membership fee from users. Although users can still upload their vocabooks.
-FREE. For now, user can upload their voacbooks, access, merge  and see all other vocabooks for free.
+1.  Charge for merging vocabook at the end of the PDF.
+2.  Take membership fee from users. Although users can still
+    upload their vocabooks.
+    FREE. For now, user can upload their voacbooks, access, merge
+    and see all other vocabooks for free.
+
+______________________________________________________________
 
 
-
-Enable V_Env
+Enable V_Env:
 
 source /home/sandeep/Project/Vocabook/env/bin/activate
 source env/bin/activate
+
+______________________________________________________________
+
+
+Push on git:
+
+git add -A
+git commit -m "Message"
+git push -u origin master

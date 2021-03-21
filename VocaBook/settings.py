@@ -26,7 +26,7 @@ SECRET_KEY = 'gnjam!fl2(^!089p#*p2ay7i)7=mxq2nf4&9olij&dpknm5n(%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [   'https://vocabookapp01.herokuapp.com',
+ALLOWED_HOSTS = [   'vocabookapp01.herokuapp.com',
                     'desolate-mountain-71654.herokuapp.com']
 
 

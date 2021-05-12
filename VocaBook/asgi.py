@@ -14,3 +14,10 @@ from django.core.asgi import get_asgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'VocaBook.settings')
 
 application = get_asgi_application()
+
+
+# Added manually
+MEDIA_URL = '/media/'
+MEDIA_ROOT = (
+    os.path.join(BASE_DIR, 'media')
+)

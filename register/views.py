@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import RegisterForm
+from flask import request
+
 
 # Create your views here.
 def register(response):
@@ -7,9 +9,10 @@ def register(response):
         form = RegisterForm(response.POST)
         if form.is_valid():
             form.save()
+            return redirect("index")
         else:
             print("Form invalid")
-        return redirect("/index")
+            return render(response, "register/register.html", {"form":form, "error":form.errors})
     else:
         form = RegisterForm()
 

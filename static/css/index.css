@@ -105,7 +105,7 @@
 		height: 100%;
 		text-align: center;
 		padding-top: 80px;
-		background-image: url(images/sec1bg.jpg);
+		background-image: url(../images/sec1bg.jpg);
 		background-size: 100% 100%;
 
 
@@ -133,6 +133,8 @@
 	#sec2 .div-two{
 		display: inline-flex;
 		margin: 5px;
+		display: flex;
+		justify-content:space-around;
 	
 	}
 	#sec2 .div-two .card{
@@ -158,7 +160,8 @@
 		width: 150px;
 		height: 150px;
 		border-radius: 50%;
-		margin: 30px 0 20px 100px ;
+		margin: 30px 0 20px 25% ;
+
 	}
 	#sec2 .div-two .card button{
 		align-self: center;
@@ -168,7 +171,7 @@
 	}
 	/*============== sec3 ==========*/
 	#sec3{
-		background-image: url(images/fixedbg.jpg);
+		background-image: url(../images/fixedbg.jpg);
 		background-size: 100% 100%;
 		background-attachment: fixed;
 		border: 1px solid #000;
@@ -232,4 +235,9 @@
 
 #sec5 .footer-div3 .icons{
 
+}
+{% load static %}
+@font-face {
+    font-family: "Calibri";
+    src: url({% static "fonts/calibri.ttf" %});
 }

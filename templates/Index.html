@@ -1,0 +1,83 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>index</title>
+  <meta charset="utf-8">
+  <!-- ==================font-awesome 4.7.0====== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'%}">
+
+
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- ===============Bootstrap cdn=========== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!-- =====================local css========== -->
+<!--   <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+       <link rel='stylesheet' href="{% static 'css/index.css' %}">
+
+  <!-- ===========style sheet ============== -->
+  <style type="text/css">
+
+  </style>
+</head>
+<body>
+	<div style="height: 85px;">
+		<!-- empty -->
+	</div>
+	<section id="sec1">
+		<div class="div-one">
+			<p>" Reading is a conversation. all books talk.<br> but a good book listens as well. "
+			</p>
+			<p>
+			- Mark haddon</p>
+			<div class="upload">
+				<!-- <input type="file" name=""><br> -->
+				<button class="btn btn-primary" ><a href="/upload" style="text-decoration: none; color: #fff;">click to upload</a></button>
+			</div>
+		</div>
+	</section>
+	<section id="sec4">
+		<div class="m-4">
+			<h1>Learn the words you’ll need to know.</h1>
+		</div>
+		<div class="justify-content-between d-sm-flex  ">
+			<div class="w-25 p-sm-3">
+				<h3>You choose...</h3>
+				<p>Studying for an exam like the SAT, GRE, or TOEFL? We have over 50,000 ready-to-learn vocabulary lists — everything from standardized tests to classic literature, breaking news — you name it.
+
+				Just want to ace tomorrow’s vocabulary quiz? Create your own list of words to study. Vocabulary lists are easy to make, share, and learn.</p>
+			</div>
+
+			<div class="w-25 p-sm-3">
+				<h3>Or, let us choose...</h3>
+				<p>Don’t have a specific list in mind? Let our adaptive learning system find the right words for you.
+
+				Play a few questions and we’ll zero in on key academic words that are appropriate for your level. Once we get to know you, we won’t waste your time on words that are too easy or too hard.</p>
+			</div>
+
+			<div class="w-25 p-sm-3">
+				<h3>Either way, you’ll improve</h3>
+				<p>Like a good coach, Vocabulary.com won’t give up on you. Whether you pick the words or let us find them for you, we’ll work with you until you’ve mastered them.
+
+				And even after you’ve achieved mastery, we’ll continue to reinforce what you have learned to make sure that it all stays fresh in your memory.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="sec3">
+		<p>
+			" take a good book with you - <br>
+			books do not snore. " 
+		</p>
+		<p>- thea dorn</p>
+	</section>
+	{% endblock body%}
+
+</body>
+</html>
+

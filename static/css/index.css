@@ -1,0 +1,247 @@
+
+	*{margin: 0; padding: 0;}
+
+	body{
+		width: 98%;
+		justify-content: center;
+		margin: auto;
+		background-color:#E5E8E8;
+
+	}
+	/*==========nav==========*/
+	#header{
+		width: 98%;
+		height: auto;
+		background-color: #E5E8E8;
+		position:fixed;
+		border: none;
+	}
+	#nav{
+		width: 100%;
+		height: 80px;
+		background-color: #0DCDA9;
+		display: inline-flex;
+		border: none;
+	}
+	#nav .logo , #nav .logo img, #sec5 .logo{
+		width: 12.5rem;
+		height: 100%;
+		font-size: 18pt;
+		letter-spacing: 2px;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 70px;
+		color: #202020;
+	}
+	#nav .logo::after{
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-left:2px solid #fff;
+		margin-left: 5px;
+		
+	}
+
+	#nav .search {
+		width: 40%;
+		display: inline-flex;
+		margin: auto;
+		/*border: 1px solid red;*/
+	}
+	#nav .search input{
+		width: 50%;
+		height: 40px;
+		border-radius: 0;
+	}
+	#nav .srchbtn{
+		width: 50px;
+		height: 40px;
+		margin-left: -8px;
+		background-color: black;
+		border-radius: 0;
+	}
+	#nav .srchicon{
+		font-size:24px;
+		color:#fff;
+	}	
+	#nav #span-item {
+		/*border: 1px solid blue;*/
+		margin: auto;
+		text-align: right;
+	}
+	#nav .usericon{
+		font-size:30px;
+		color:#0DCDA9;
+		margin: 15px 15px 0 0 ;
+	}
+	#nav .user{
+		width: 150px;
+		cursor: pointer;
+	}
+	#nav .user ul{
+		display: none;
+		text-transform: capitalize;
+		padding: 2px;
+		text-align: center;
+		width: 130px;
+		font-size: 14pt;
+	}
+	#nav .user ul li{
+		padding: 3px;
+		list-style-type: none;
+	}
+	#nav .user ul li a{		
+		text-decoration: none;
+	}
+	#nav .user:hover ul{
+		display:block;
+		margin-top: 27px;
+		border: 1px solid;
+		margin-left: -18px;
+	}
+	#nav .user ul li:hover{
+		background-color: rgba(0,0,0,0.3);
+	}
+	section{
+		width: 100%;
+		height: 400px;
+		/*border: 1px solid;*/
+		text-transform: capitalize;
+	}
+	/*==========sec1=========*/
+	#sec1 .div-one{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding-top: 80px;
+		background-image: url(../images/sec1bg.jpg);
+		background-size: 100% 100%;
+
+
+	}
+	#sec1 .div-one p{
+		width: 40%;
+		text-align: center;
+		color: #fff;
+		font-size: 18pt;
+		background-color: rgba(0,0,0,0.3);
+		justify-content: center;
+		margin: auto;
+		padding: 8px 0;
+	}
+	#sec1 .div-one .upload{
+		margin: auto;
+		padding: 20px;
+		width: 20rem;
+		border: 1px solid;
+	}
+	#sec1 .div-one .upload button{
+		margin-top: 20px;
+	}
+	/*========sec2=========*/
+	#sec2 .div-two{
+		display: inline-flex;
+		margin: 5px;
+		display: flex;
+		justify-content:space-around;
+	
+	}
+	#sec2 .div-two .card{
+		width: 19rem;
+		height: 23rem;
+		border: 1px solid #000;
+		text-transform: capitalize;
+		margin: 5px;
+		background: #5D4157;
+		background: -webkit-linear-gradient(to right,#A8CABA,#5D4157);
+		background: linear-gradient(to right, #A8CABA, #5D4157);
+		text-align: center;
+		position: static;
+
+	}
+	#sec2 .div-two .card h1{
+		font-size: 24px;
+		border-bottom: 1px solid #000;
+		padding: 5px 0 5px 10px;
+
+	}
+	#sec2 .div-two .card img{
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		margin: 30px 0 20px 25% ;
+
+	}
+	#sec2 .div-two .card button{
+		align-self: center;
+		margin: auto;
+		margin-bottom: 20px;
+		text-transform: capitalize;
+	}
+	/*============== sec3 ==========*/
+	#sec3{
+		background-image: url(../images/fixedbg.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		border: 1px solid #000;
+
+	}
+	#sec3 p{
+		width: 30%;
+		text-align: center;
+		color: #fff;
+		font-size: 18pt;
+		background-color: rgba(0,0,0,0.3);
+		justify-content: center;
+		margin: auto;
+		margin-top: 10%;
+		padding: 5px 0;
+	}
+	#sec3 p:nth-child(2){
+		font-size: 14pt;
+		margin-top: 5px;
+		width: 10%;
+	}
+
+/*=========== Footer =============*/
+
+#sec5{
+	width: 100%;
+	height: 250px;
+	background-color: #bcbcbc;
+	padding: 15px;
+}
+#sec5 #footer-main{
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+#sec5 .copyright{
+	height: 100px;
+}
+#sec5 .footer-div2, #sec5 .footer-div3 {
+	/*text-align: center;*/
+	padding: 10px;
+
+}
+#sec5 .footer-div2 ul{
+	list-style-type: none;
+	font-size: 14pt;
+	text-align: left;
+}
+#sec5 .footer-div2 ul a{
+	text-decoration: none;
+}
+#sec5 .copyright{
+	border-top: 1px solid #000;
+	justify-content: center;
+	display: flex;
+}
+
+{% load static %}
+
+@font-face {
+    font-family: "Calibri";
+    src: url({% static "fonts/calibri.ttf" %});
+}

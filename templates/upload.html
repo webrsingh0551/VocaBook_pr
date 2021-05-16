@@ -1,0 +1,42 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel='stylesheet' href="{% static 'css/upload.css' %}">
+
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			{%if user.is_authenticated%}
+
+				<h3>Upload Book Here...</h3>
+				<form enctype="multipart/form-data" method="POST" novalidate class="form">
+			    {% csrf_token %}
+				{% comment %} {{uf.errors}}<br>
+				{{uf.file}} {% endcomment %}
+
+				<label for="name">Book Name :&ensp;</label>
+				<input type="text" name="bookname" ><br>
+
+				<label>Upload File Here :&ensp;</label>
+				<input type="file" name="pdffile"> <br>
+
+				<button class="btn btn-primary mt-2 w-50">Upload</button>
+
+				</form>
+
+			{%else%}
+
+				<p class="m-2">You must login first<a href="/login"> Login Here </a></p>
+			{%endif%}
+		</div>
+	</div>
+	{% endblock body%}
+</body>
+</html>
